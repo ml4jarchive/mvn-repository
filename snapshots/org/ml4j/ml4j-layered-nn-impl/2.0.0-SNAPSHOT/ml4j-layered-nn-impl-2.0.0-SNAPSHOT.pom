@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.ml4j</groupId>
-	<artifactId>ml4j-nn-impl</artifactId>
+	<artifactId>ml4j-layered-nn-impl</artifactId>
 	<packaging>jar</packaging>
 	<version>2.0.0-SNAPSHOT</version>
-	<name>ml4j-nn-impl</name>
+	<name>ml4j-layered-nn-impl</name>
 	<properties>
 	</properties>
 	<distributionManagement>
@@ -18,11 +18,28 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
+		<repository>
+			<id>ml4j-snapshots</id>
+			<url>https://raw.githubusercontent.com/ml4j/mvn-repository/master/snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.ml4j</groupId>
 			<artifactId>ml4j-nn-api</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+			<dependency>
+			<groupId>org.ml4j</groupId>
+			<artifactId>ml4j-layers-impl</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+			<dependency>
+			<groupId>org.ml4j</groupId>
+			<artifactId>ml4j-nn-impl</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 		  <dependency>
