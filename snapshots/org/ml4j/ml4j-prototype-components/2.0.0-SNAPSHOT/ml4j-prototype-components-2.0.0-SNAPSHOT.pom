@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.ml4j</groupId>
-	<artifactId>ml4j-components-impl</artifactId>
+	<artifactId>ml4j-prototype-components</artifactId>
 	<packaging>jar</packaging>
 	<version>2.0.0-SNAPSHOT</version>
-	<name>ml4j-components-impl</name>
+	<name>ml4j-prototype-components</name>
 	<properties>
 	</properties>
 	<distributionManagement>
@@ -27,16 +27,30 @@
 		</dependency>
 			<dependency>
 			<groupId>org.ml4j</groupId>
-			<artifactId>ml4j-base-impl</artifactId>
+			<artifactId>ml4j-axons-api</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
-		<!-- 
+		<dependency>
+			<groupId>org.ml4j</groupId>
+			<artifactId>ml4j-base-components</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		 </dependency>
+		   <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.22</version>
+            <scope>provided</scope>
+        </dependency>
 			<dependency>
 			<groupId>org.ml4j</groupId>
-			<artifactId>ml4j-axons-impl</artifactId>
+			<artifactId>ml4j-matrices-impl</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
-	 -->
+		<dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.2</version>
+        </dependency>
 		 <dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -60,17 +74,11 @@
 			<artifactId>ml4j-matrices-api</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
-    	<dependency>
+				<dependency>
 			<groupId>org.ml4j</groupId>
-			<artifactId>ml4j-matrices-impl</artifactId>
+			<artifactId>ml4j-base-impl</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
-	  <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.22</version>
-            <scope>provided</scope>
-        </dependency>
 	</dependencies>
 	<build>
 		<plugins>
