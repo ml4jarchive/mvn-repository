@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.ml4j</groupId>
-	<artifactId>neural-network-architectures</artifactId>
+	<artifactId>ml4j-sessions-api</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0-SNAPSHOT</version>
-	<name>neural-network-architectures</name>
+	<version>2.0.0-SNAPSHOT</version>
+	<name>ml4j-sessions-api</name>
 	<properties>
 	</properties>
 	<distributionManagement>
@@ -14,7 +14,8 @@
 	<repositories>
 		<repository>
 			<id>ml4j-snapshots</id>
-			<url>https://raw.githubusercontent.com/ml4j/mvn-repository/master/snapshots</url>
+			<url>https://raw.githubusercontent.com/ml4j/mvn-repository/master/snapshots
+			</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
@@ -23,8 +24,30 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.ml4j</groupId>
-			<artifactId>ml4j-sessions-api</artifactId>
+			<artifactId>ml4j-matrices-api</artifactId>
 			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ml4j</groupId>
+			<artifactId>ml4j-base-api</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ml4j</groupId>
+			<artifactId>ml4j-builders-api</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+			<dependency>
+			<groupId>org.ml4j</groupId>
+			<artifactId>ml4j-nn-api</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.ml4j</groupId> <artifactId>ml4j-axons-api</artifactId> 
+			<version>2.0.0-SNAPSHOT</version> </dependency> -->
+		<dependency>
+			<groupId>org.jblas</groupId>
+			<artifactId>jblas</artifactId>
+			<version>1.2.4</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -35,42 +58,6 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.8.2</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.ml4j</groupId>
-			<artifactId>ml4j-mock-activationfunctions</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.ml4j</groupId>
-			<artifactId>ml4j-components-tests</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.16.22</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.ml4j</groupId>
-			<artifactId>ml4j-sessions-impl</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>ch.qos.logback</groupId>
-					<artifactId>logback-classic</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.ml4j</groupId>
-			<artifactId>ml4j-mock-components</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
